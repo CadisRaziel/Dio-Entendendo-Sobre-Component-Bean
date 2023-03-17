@@ -15,6 +15,9 @@ public class PrimeirosPassosApplication {
         SpringApplication.run(PrimeirosPassosApplication.class, args);
     }
 
+    //qui temos um bean pois estamos injetando dependencia via paramentro da função o 'ConversorJson'
+    //porque o CommandLineRunner nao é uma classe, ou interface ou implementação da MINHA APLICAÇÂO
+    //ele é uma biblioteca externa (mais eu quero inicia a construção de um bean nele)
     @Bean
     public CommandLineRunner run(ConversorJson conversor) throws Exception {
         return args -> {

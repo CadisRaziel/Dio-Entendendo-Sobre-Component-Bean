@@ -17,6 +17,7 @@ public class ConversorJson {
     //Então precisamos fazer um Bean dele
     @Autowired
     private Gson gson;
+
     public ViaCepResponse converter(String json) {
         //vamos converter o json que vem do viaCep em um objeto do nosso dominio
         ViaCepResponse response = gson.fromJson(json, ViaCepResponse.class);
