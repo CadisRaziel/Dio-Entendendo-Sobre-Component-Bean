@@ -1,0 +1,6 @@
+Quando usar @Bean?
+
+
+Quando usar @Component?
+
+Implementar a IoC e DI (inversão de controle e injeção de dependencia)
